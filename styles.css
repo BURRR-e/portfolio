@@ -1,0 +1,233 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('bgspace.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+header {
+    display: flex;
+    flex-direction: column; /* Stack items for mobile */
+    align-items: center; /* Center items */
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0; /* Adjust padding */
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center; /* Center the header text */
+}
+
+nav {
+    width: 100%; /* Full width */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center items */
+    transition: max-height 0.3s ease-in-out; /* Animation for dropdown */
+}
+
+nav ul li {
+    margin: 0 15px; /* Adjust margin */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 10px 15px; /* Add padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 166, 251, 0.5); /* Background color on hover */
+    color: #00A6FB; /* Change text color on hover */
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Hide by default */
+    font-size: 30px;
+    cursor: pointer;
+    margin: 10px; /* Add margin */
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        max-height: 0; /* Hide menu by default */
+        overflow: hidden; /* Prevent overflow */
+        transition: max-height 0.3s ease-in-out; /* Animation for dropdown */
+    }
+
+    nav ul.show {
+        max-height: 300px; /* Adjust based on number of items */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
+    }
+}
+
+/* Home Section */
+.home {
+    text-align: center;
+    padding: 80px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.home img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.home img:hover {
+    transform: scale(1.1);
+}
+
+.home h2 {
+    font-size: 30px;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.home p {
+    font-size: 18px;
+    color: white;
+    max-width: 600px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+/* Work Section */
+.work {
+    padding: 50px;
+    text-align: center;
+}
+
+.work h2 {
+    font-size: 28px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.8);
+}
+
+.sample {
+    margin-bottom: 20px;
+}
+
+.sample img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sample img:hover {
+    transform: scale(1.1);
+}
+
+/* Image Gallery */
+.image-gallery {
+    text-align: center;
+    padding: 40px;
+}
+
+.image-container {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+/* Image Glow Effect */
+.image-container img {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 255, 255, 0.5);
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 50px;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact li {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #00A6FB;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact a:hover {
+    color: #ffcc00;
+}
+
+/* Footer with Space Glow */
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Quote Styling */
+footer p {
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

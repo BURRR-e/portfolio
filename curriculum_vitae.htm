@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MADSCIENTIST</h1>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="work.htm">Work Samples</a></li>
+                <li><a href="curriculum_vitae.htm">Curriculum Vitae</a></li>
+                <li><a href="5-Year_Plan.htm">5-Year Plan</a></li>
+                <li><a href="Contact.htm">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <img src="cv.jpg" style="max-width: 99.99%; height:auto;" />
+    </section>
+        <script>
+        function toggleMenu() {
+            var menu = document.getElementById("nav-menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

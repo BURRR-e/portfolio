@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Samples</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MADSCIENTIST</h1>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="work.htm">Work Samples</a></li>
+                <li><a href="curriculum_vitae.htm">Curriculum Vitae</a></li>
+                <li><a href="5-Year_Plan.htm">5-Year Plan</a></li>
+                <li><a href="Contact.htm">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="work">
+        <h2>My Work Samples</h2>
+        <div class="sample">
+            <img src="cassini1.jpeg">
+            <img src="cassini2.jpeg">
+            <p><b>"Cassini"</b> is the logo I created for my future space agency for the subject Empowering Technologies.</p>
+        </div>
+        <br>
+        <div class="sample">
+            <img src="earth1.jpeg">
+            <img src="eath2.jpeg">
+            <p>These images are outputs for the subject Earth Science with objectives of creating a card that represents the evolution of earth. I made the content and its design, with my partner finalizing the whole look of the card.</p>
+        </div>
+        <br>
+        <div class="sample">
+            <img src="hydrogen.jpeg">
+            <p>This image showcases the concept of <b>"HYDROGEN"</b>. Where it came from, the proponent, its uses and functionality, and fun facts. I made the layout or design of this infographic that serves as our performance task in General Chemistry.</p>
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("nav-menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

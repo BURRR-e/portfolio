@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY DIGITAL PORTFOLIO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MADSCIENTIST</h1>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="work.htm">Work Samples</a></li>
+                <li><a href="curriculum_vitae.htm">Curriculum Vitae</a></li>
+                <li><a href="5-Year_Plan.htm">5-Year Plan</a></li>
+                <li><a href="Contact.htm">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="container">
+            <img src="download.jpeg">
+            <h2>Hello, I'm Lorraine M. Matulac</h2>
+            <p>STEM is the strand I chose because of my enthusiasm and love for science. I love questioning about the world and learning about how things work. I am passionate about astrophysics, chemistry, and biology.</p>
+        </div>
+        <p>These are some of my favorite <b>NASA</b> articles that you can read:</p>
+        <ol class="article-links">
+            <li><a style="color:#a0dbe8" href="https://science.nasa.gov/saturn/">Saturn.nasa.gov</a></li>
+            <li><a style="color:#a0dbe8" href="https://science.nasa.gov/universe/exoplanets/discovery-alert-a-super-earth-in-the-habitable-zone/">Discovery Alert: A Super-Earth in the Habitable Zone</a></li>
+            <li><a style="color:#a0dbe8" href="https://www.nasa.gov/missions/chandra/nasa-telescopes-discover-record-breaking-black-hole/">NASA Telescopes Discover Record-Breaking Black Hole</a></li>
+        </ol>
+        <b>ABOUT ME:</b> Good day, Homo Sapiens! You can just call or address me as "Lori" for short. I am 18 years old with a massive love for the body of knowledge known as <b>"Science".</b> As a kid, I have a deep fascination about "everything" in general. With a curious mind and a determined heart, I wanted to make big contributions to the field of Science and Technology, aiming to go beyond the impossible, to go beyond the observable universe with an infinite fueled rocket, ready to uncover the mysteries of the universe.
+    </section>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("nav-menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
